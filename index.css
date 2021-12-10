@@ -23,6 +23,13 @@ html {
   }
 }
 
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -104,7 +111,6 @@ min-height: 100%;
 .full-screen-video-content{
   padding: 200px;
   color: #63f2f2;
-  max-width: 100%;
 }
 
 .projects-section-header {

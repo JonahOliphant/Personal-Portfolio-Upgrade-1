@@ -50,7 +50,6 @@ h1 {
   text-shadow: 4px 4px 10px #1f1f1f;
 }
 
-
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -85,10 +84,10 @@ a {
 
 .nav-list a {
   display: block;
-  padding: 3rem 4rem 3rem 4rem;
+  padding: 2rem 4rem 2rem 4rem;
   font-size: 4rem;
   color: #ffffff;
-  text-shadow: 2px 2px 4px #1f1f1f;
+  text-shadow: 3px 3px 4px #1f1f1f;
 }
 
 .nav-list a:hover {

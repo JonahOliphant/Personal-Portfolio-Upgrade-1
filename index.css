@@ -93,13 +93,13 @@ a {
 
 .full-screen-video-container{
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 820px;
-  max-height: 825px;
+  min-height: 810px;
+  max-height: 820px;
 }
 
 .full-screen-video-container video{

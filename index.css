@@ -45,14 +45,14 @@ body {
 }
 
 h1 {
-  font-size: 12rem;
+  font-size: 10rem;
   color: #63f2f2;
 }
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
-  font-size: 6.2rem;
+  font-size: 4.2rem;
   color: #63f2f2;
 }
 
@@ -91,47 +91,47 @@ a {
   background-color: #8c3a58;
 }
 
-.full-screen-video-container {
+.full-screen-video-container{
   position: relative;
-  height: 140vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  min-height: 820px;
   max-height: 825px;
-  min-width: 840px;
 }
 
-.full-screen-video-container video {
+.full-screen-video-container video{
   z-index: -1;
-  position: absolute;
-  width: auto;
-  height: auto;
-  min-width: 840px;
-  min-height: 100%;
+position: absolute;
+width: auto;
+height: auto;
+min-width: 100%;
+min-height: 100%;
+
 }
 
-.full-screen-video-content {
+.full-screen-video-content{
   padding: 200px;
   color: #63f2f2;
 }
 
 .projects-section-header {
   font-size: 6rem;
-  padding-top: 6rem;
-  width: 100%;
-  margin: 0 auto 0 auto;
-  border-bottom: 7px solid;
-  color: #730217;
-}
-
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 5rem;
+    padding-top: 6rem;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    border-bottom: 7px solid;
+    color: #730217;
   }
-}
-
+  
+  @media (max-width: 28.75em) {
+    .projects-section-header {
+      font-size: 5rem;
+    }
+  }
+  
 .projects-grid {
   padding-top: 3rem;
   padding-bottom: 10rem;
@@ -143,39 +143,41 @@ a {
   height: max-content;
 }
 
+
 .project-tile {
   margin: 3rem;
   background-color: #730217;
-  box-shadow: 5px 7px 10px 2px rgb(0, 0, 0);
-  border-radius: 10px;
+    box-shadow: 5px 7px 10px 2px rgb(0, 0, 0);
+    border-radius: 10px;
 }
 
 .code {
-  color: #44e1f2;
-  transition: color 0.3s ease-out;
-}
+    color: #44e1f2;
+    transition: color 0.3s ease-out;
+  }
+  
+  .project:hover .code {
+    color: #730217
+  }
 
-.project:hover .code {
-  color: #730217;
-}
-
-.project-tile:hover {
-  background-color: #ff73a6;
-}
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: bolder;
-  padding: 2rem 0.5rem;
-  text-align: center;
-}
+  .project-tile:hover {
+      background-color: #ff73a6;
+  }
+  
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+   
+  }
+  
+  .project-title {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 2rem 0.5rem;
+    text-align: center;
+  }
 
 #contact {
   display: flex;
@@ -205,10 +207,10 @@ a {
 }
 
 #contact div a {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
   margin: 0 2.5rem;
   font-size: xx-large;
   text-shadow: 1px 1px 1px #1f1f1f;
@@ -229,3 +231,4 @@ footer {
   border-top: 5px solid;
   border-color: #1f1f1f;
 }
+  

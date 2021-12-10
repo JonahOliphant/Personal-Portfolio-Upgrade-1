@@ -26,14 +26,14 @@ html {
 /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
   html {
-    font-size: 40%;
+    font-size: 35%;
   }
 }
 
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
-    font-size: 35%;
+    font-size: 30%;
   }
 }
 

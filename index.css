@@ -50,6 +50,13 @@ h1 {
   text-shadow: 4px 4px 10px #1f1f1f;
 }
 
+div h1:hover{
+  color: #002bff;
+  cursor: default;
+  
+}
+
+
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -57,6 +64,12 @@ h2 {
   font-size: 4.2rem;
   color: #63f2f2;
   text-shadow: 1px 2px 2px #1f1f1f;
+}
+
+div h2:hover{
+  color: #002bff;
+  cursor: default;
+  
 }
 
 ul {

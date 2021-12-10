@@ -19,7 +19,7 @@ html {
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
 }
 

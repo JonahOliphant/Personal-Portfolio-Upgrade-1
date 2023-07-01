@@ -336,9 +336,9 @@ a {
   font-size: 24px;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1200px) {
   .project-title {
-    font-size: 20px;
+    font-size: 99%;
   }
 }
 

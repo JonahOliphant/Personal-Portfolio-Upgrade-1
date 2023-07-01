@@ -49,7 +49,7 @@ h1 {
   font-size: 8rem;
   font-weight: 700;
   color: #ffffff;
-  text-shadow: 4px 2px 3px #1f1f1f;
+  text-shadow: 3px 2px 1px #000000;
 }
 
 
@@ -60,7 +60,7 @@ h2 {
   text-align: center;
   font-size: 4rem;
   color: #ffffff;
-  text-shadow: 2px 3px 2px #1f1f1f;
+  text-shadow: 3px 2px 1px #000000;
 }
 
 #welcome-section h2:hover {
@@ -87,7 +87,7 @@ a {
   position: fixed;
   justify-content: end;
   width: 100%;
-  background-color: #730217;
+  background-color: #F1D771;
   box-shadow: 0 7px 7px -2px rgba(0,0,0,.5);
 }
 
@@ -105,8 +105,9 @@ a {
   display: block;
   padding: 1rem 2rem 1rem 2rem;
   font-size: 3.5rem;
-  color: #ffffff;
-  text-shadow: 2px 3px 1.5px #1f1f1f;
+  color: #2e2e2e;
+  text-shadow: 0.5px 1px 1px #000000;
+  font-weight: 600;
 }
 
 .nav-list a:hover {
@@ -118,7 +119,7 @@ a {
   height: 100%;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: #44e1f2;
   background: #111;
   cursor: pointer;
   position: relative;
@@ -258,13 +259,15 @@ a {
 
 .projects-section-header {
   font-size: 5rem;
-  text-shadow: 0px 1.5px 2px #1f1f1f;
+  text-shadow: 1px 2.5px 5px #000000;
   padding-top: 4rem;
   padding-bottom: 1rem;
   width: 100%;
   margin: 0 auto 0 auto;
   border-bottom: 3px solid;
   color: #ffffff;
+  box-shadow: 0 7px 7px -2px rgba(0,0,0,.5);
+
 }
 
 @media (max-width: 28.75em) {
@@ -278,7 +281,7 @@ a {
   padding-bottom: 8rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: #333333;
+  background-color: #1A0E4A;
   justify-content: space-evenly;
   align-items: center;
   height: max-content;
@@ -286,25 +289,26 @@ a {
 
 .project-tile {
   margin: 3rem 1rem 2rem 1rem;
-  background-color: #730217;
-  box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.6);
+  background-color: #2e2e2e;
+  box-shadow: 0px 4px 5px 2px rgb(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
 .code {
-  color: #44e1f2;
+  color: #2e2e2e;
+  text-shadow: 0.5px 0.5px 1px #000000;
   transition: color 0.3s ease-out;
 }
 
 .project:hover .code {
-  color: #730217;
+  color: #44e1f2;
 }
 
 .project-tile:hover {
-  background-color: #ff73a6;
+  background-color: #8c3a58; 
   transform: scale(1.03);
   transition: transform 0.15s ease-in;
-  box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.9);
 }
 
 .project-image {
@@ -314,11 +318,13 @@ a {
 }
 
 .project-title {
-  color: #ffffff;
+  color: #63f2f2;
+  text-shadow: 0.5px 2px 1px #000000;
   font-size: 2.5rem;
   font-weight: bolder;
   padding: 2rem 0.5rem;
   text-align: center;
+  font-weight: 600;
 }
 
 #contact {
@@ -327,19 +333,21 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #8c3a58;
+  background-color: #F1D771;
 }
 
 #contact h1 {
   font-size: 4rem;
-  color: #44e1f2;
+  color: #2e2e2e;
+  text-shadow: 0.5px 1px 1px #000000;
   margin-bottom: 1rem;
 }
 
 #contact h2 {
   font-size: 26px;
   padding-bottom: 5rem;
-  color: #44e1f2;
+  color: #2e2e2e;
+  text-shadow: 0.5px 1px 1px #000000;
 }
 
 #contact div {
@@ -356,14 +364,15 @@ a {
   align-items: center;
   margin: 0 2.5rem;
   font-size: xx-large;
-  text-shadow: 1px 1px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
-  color: #63f2f2;
-  text-shadow: 2px 2px 2px #1f1f1f;
+  color: #2e2e2e;
+  text-shadow: 0.5px 1px 2px #000000;
+  font-weight: 500;
 }
 
 #contact div a:hover {
   transform: translateY(8px);
+  color: #63f2f2;
 }
 
 footer {

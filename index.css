@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1.8rem;
   line-height: 1.2;
   min-width: 840px;
@@ -49,18 +49,18 @@ h1 {
   font-size: 8rem;
   font-weight: 700;
   color: #ffffff;
-  text-shadow: 5px 5px 6px #1f1f1f;
+  text-shadow: 4px 2px 3px #1f1f1f;
 }
 
 
 
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-weight: 700;
   text-align: center;
   font-size: 4rem;
   color: #ffffff;
-  text-shadow: 4px 4px 5px #1f1f1f;
+  text-shadow: 2px 3px 2px #1f1f1f;
 }
 
 #welcome-section h2:hover {
@@ -86,9 +86,9 @@ a {
   display: flex;
   position: fixed;
   justify-content: end;
-  padding-right: 1rem;
   width: 100%;
   background-color: #730217;
+  box-shadow: 0 7px 7px -2px rgba(0,0,0,.5);
 }
 
 .nav-list {
@@ -96,12 +96,17 @@ a {
   list-style-type: none;
 }
 
+.nav-list li {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
 .nav-list a {
   display: block;
-  padding: 2rem 4rem 2rem 4rem;
-  font-size: 4rem;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 3.5rem;
   color: #ffffff;
-  text-shadow: 3px 3px 4px #1f1f1f;
+  text-shadow: 2px 3px 1.5px #1f1f1f;
 }
 
 .nav-list a:hover {
@@ -185,14 +190,55 @@ a {
   }
 }
 
+#scroll-container {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#scroll-text {
+  padding-left: 27vw;
+  padding-right: 27vw;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
 .full-screen-video-container {
   position: relative;
-  width: 100%;
+  height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 110vh;
+  min-height: 100vh;
 }
 
 .full-screen-video-container video {
@@ -202,6 +248,7 @@ a {
   height: auto;
   min-width: 100%;
   min-height: 100%;
+  bottom: 0;
 }
 
 .full-screen-video-content {
@@ -210,13 +257,14 @@ a {
 }
 
 .projects-section-header {
-  font-size: 6rem;
-  text-shadow: 0px 2px 2.5px #1f1f1f;
-  padding-top: 6rem;
+  font-size: 5rem;
+  text-shadow: 0px 1.5px 2px #1f1f1f;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
   width: 100%;
   margin: 0 auto 0 auto;
-  border-bottom: 7px solid;
-  color: #730217;
+  border-bottom: 3px solid;
+  color: #ffffff;
 }
 
 @media (max-width: 28.75em) {
@@ -227,20 +275,20 @@ a {
 
 .projects-grid {
   padding-top: 3rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ffffff;
+  background-color: #333333;
   justify-content: space-evenly;
   align-items: center;
   height: max-content;
 }
 
 .project-tile {
-  margin: 3rem;
+  margin: 3rem 1rem 2rem 1rem;
   background-color: #730217;
   box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.6);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .code {
@@ -254,7 +302,7 @@ a {
 
 .project-tile:hover {
   background-color: #ff73a6;
-  transform: scale(1.07);
+  transform: scale(1.03);
   transition: transform 0.15s ease-in;
   box-shadow: 0px 4px 10px 2px rgb(0, 0, 0, 0.9);
 }
@@ -274,9 +322,8 @@ a {
 }
 
 #contact {
-  padding-top: 5rem;
   display: flex;
-  height: 45rem;
+  height: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -284,21 +331,22 @@ a {
 }
 
 #contact h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #44e1f2;
+  margin-bottom: 1rem;
 }
 
 #contact h2 {
-  font-size: xx-large;
-  padding-bottom: 9rem;
+  font-size: 26px;
+  padding-bottom: 5rem;
   color: #44e1f2;
 }
 
 #contact div {
   display: flex;
   justify-content: center;
-  padding-bottom: 4rem;
-  margin-bottom: 3rem;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 #contact div a {
@@ -311,6 +359,7 @@ a {
   text-shadow: 1px 1px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
   color: #63f2f2;
+  text-shadow: 2px 2px 2px #1f1f1f;
 }
 
 #contact div a:hover {
@@ -323,6 +372,6 @@ footer {
   font-size: 2rem;
   padding: 0.3rem;
   background-color: #63f2f2;
-  border-top: 5px solid;
+  border-top: 3px solid;
   border-color: #1f1f1f;
 }

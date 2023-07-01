@@ -31,7 +31,24 @@
     <nav id="navbar">
       <ul class="nav-list">
         <li><div id="scroll-container">
-          <a href="#welcome-section" id="scroll-text">I ❤️ the Internet</a></li>
+          <a onClick="playPause()" id="scroll-text"><audio
+            src="/tofu chan - lofi hip hop - hop to it - beats to relaxstudy to.mp3"
+            autoplay
+            loop
+          ></audio> I ❤️ the Internet</a></li> <script>
+            var aud = document.getElementById("scroll-text").children[0];
+            var isPlaying = false;
+            aud.pause();
+          
+            function playPause() {
+              if (isPlaying) {
+                aud.pause();
+              } else {
+                aud.play();
+              }
+              isPlaying = !isPlaying;
+            }
+          </script>
         <li><a href="#welcome-section">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>

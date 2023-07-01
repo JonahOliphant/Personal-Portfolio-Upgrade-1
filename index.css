@@ -42,6 +42,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.2;
   min-width: 840px;
+  width:100%;
 }
 
 h1 {

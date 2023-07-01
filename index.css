@@ -334,6 +334,7 @@ a {
   padding: 1rem 0.5rem;
   text-align: center;
   font-size: 22px;
+  white-space: nowrap;
 }
 
 #contact {

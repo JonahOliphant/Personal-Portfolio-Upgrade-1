@@ -104,8 +104,10 @@ a {
 }
 
 .nav-list li {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-list a {
@@ -240,8 +242,8 @@ a {
 }
 
 #scroll-text {
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   /* animation properties */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);

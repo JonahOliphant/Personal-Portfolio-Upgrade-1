@@ -287,7 +287,7 @@ a {
 }
 
 .projects-grid {
-  padding-top: 1rem;
+  padding-top: 1vh;
   padding-bottom: 6rem;
   display: flex;
   flex-wrap: wrap;

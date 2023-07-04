@@ -103,8 +103,8 @@ a {
 @media (max-width: 75em) {
   #navbar li a {
     font-size: 180%;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 

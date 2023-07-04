@@ -92,6 +92,7 @@ a {
   z-index: +1;
   display: flex;
   position: fixed;
+  bottom: 0;
   justify-content: end;
   width: 100%;
   background-color: #f1d771;
@@ -106,14 +107,14 @@ a {
 .nav-list li {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .nav-list a {
   display: block;
   padding: 0.8rem 2rem 0.8rem 2rem;
-  font-size: 30px;
+  font-size: 24px;
   color: #2e2e2e;
   background-color: #44e1f2;
   text-shadow: 0.5px 1px 1px #000000;
@@ -242,8 +243,8 @@ a {
 }
 
 #scroll-text {
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   /* animation properties */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
@@ -305,17 +306,16 @@ a {
 .projects-section-header {
   font-size: 2.5rem;
   text-shadow: 1px 2.5px 5px #000000;
-  padding-top: 4rem;
   padding-bottom: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
-  margin: 0 auto 0 auto;
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
   color: #ffffff;
   box-shadow: 0 7px 7px -2px rgba(0, 0, 0, 0.5);
 }
 
 .projects-grid {
-  padding-top: 1vh;
+  padding-top: 2vh;
   padding-bottom: 6rem;
   display: flex;
   flex-wrap: wrap;
@@ -326,7 +326,7 @@ a {
 }
 
 .project-tile {
-  margin: 3rem 1rem 2rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   background-color: #2e2e2e;
   box-shadow: 0px 4px 5px 2px rgb(0, 0, 0, 0.6);
   border-radius: 10px;
@@ -392,7 +392,7 @@ a {
   display: flex;
   justify-content: center;
   padding-bottom: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 60px;
 }
 
 #contact div a {
@@ -413,10 +413,13 @@ a {
 }
 
 footer {
+  position: relative;
+  width: fit-content;
+  bottom: 0;
+  left: 1vw;
+  z-index: 1;
   display: flex;
-  justify-content: space-evenly;
   font-size: 1rem;
   padding: 0.3rem;
   background-color: #63f2f2;
-  border-color: #1f1f1f;
 }

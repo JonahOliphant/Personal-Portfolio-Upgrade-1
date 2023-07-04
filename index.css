@@ -25,7 +25,7 @@ html {
 /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
   html {
-    font-size: 125%;
+    font-size: 105%;
   }
 }
 
@@ -39,7 +39,7 @@ html {
 body {
   font-family: "Varela Round", sans-serif;
   line-height: 1.2;
-  min-width: 840px;
+  min-width: 450px;
 }
 
 h1 {
@@ -97,6 +97,31 @@ a {
   width: 100%;
   background-color: #f1d771;
   box-shadow: 0 7px 7px -2px rgba(0, 0, 0, 0.5);
+} 
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  #navbar li a {
+    font-size: 180%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  #navbar li a{
+    font-size: 180%;
+    padding-top: 20px;
+    padding-bottom: 20px;}
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  #navbar li a {
+    font-size: 180%;
+    padding-top: 20px;
+    padding-bottom: 20px;}
 }
 
 .nav-list {
@@ -243,8 +268,8 @@ a {
 }
 
 #scroll-text {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   /* animation properties */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
@@ -367,7 +392,7 @@ a {
 
 #contact {
   display: flex;
-  height: 300px;
+  height: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -383,14 +408,15 @@ a {
 
 #contact h2 {
   font-size: 26px;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   color: #2e2e2e;
   text-shadow: 0.5px 1px 1px #000000;
 }
 
 #contact div {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 80%;
   padding-bottom: 5px;
   margin-bottom: 60px;
 }
@@ -398,9 +424,9 @@ a {
 #contact div a {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0 2.5rem;
+  margin: 0 0.5rem;
   font-size: xx-large;
   transition: transform 0.3s ease-out;
   color: #2e2e2e;
@@ -415,11 +441,13 @@ a {
 footer {
   position: relative;
   width: fit-content;
-  bottom: 0;
-  left: 1vw;
+  bottom: 90px;
+  width: 205px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: -2px -4px 5px -9px rgba(73, 70, 70, 0.693);
   z-index: 1;
   display: flex;
-  font-size: 1rem;
-  padding: 0.3rem;
+  font-size: 14px;
+  padding: 5px 0px 5px 40px;
   background-color: #63f2f2;
 }
